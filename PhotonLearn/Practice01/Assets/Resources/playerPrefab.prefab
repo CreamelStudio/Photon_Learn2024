@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8077244638941395835}
   - component: {fileID: 2996227273701792779}
   - component: {fileID: 1677127129632909722}
+  - component: {fileID: 4287463818841296767}
   m_Layer: 0
   m_Name: playerPrefab
   m_TagString: Untagged
@@ -125,7 +126,7 @@ MonoBehaviour:
   observableSearch: 0
   ObservedComponents:
   - {fileID: 6950710792580730249}
-  - {fileID: 0}
+  - {fileID: 4287463818841296767}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -143,9 +144,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   photonView: {fileID: 0}
   rb: {fileID: 0}
-  moveSpeed: 5
-  jumpPower: 15
-  maxSpeed: 10
+  moveSpeed: 780
+  jumpPower: 10
+  maxSpeed: 1100
+  jumpCount: 0
 --- !u!50 &2996227273701792779
 Rigidbody2D:
   serializedVersion: 4
@@ -158,10 +160,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 3
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 2
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -218,3 +220,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &4287463818841296767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8449145596795169414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e7cb724808c322458aa4d15f5035fa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizeVelocity: 1
+  m_SynchronizeAngularVelocity: 0
+  m_TeleportEnabled: 0
+  m_TeleportIfDistanceGreaterThan: 3
